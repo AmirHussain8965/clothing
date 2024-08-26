@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg4454"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="Neckline.svg">
+  <defs
+     id="defs4448" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="118.07699"
+     inkscape:cy="885.58441"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4451">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1894"
+       transform="translate(65.172393,-84.607358)">
+      <rect
+         rx="4.3467264"
+         ry="4.3467264"
+         y="93.903473"
+         x="-54.258331"
+         height="26.964317"
+         width="28.442709"
+         id="rect1262-0-5-9-7"
+         style="opacity:0.95999995;fill:#000000;fill-opacity:0.58039216;stroke:none;stroke-width:2.01903319;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke" />
+      <text
+         id="text1353-1-1-0-0"
+         y="117.69246"
+         x="-39.829967"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:0.5;font-family:Helvetica;-inkscape-font-specification:Helvetica;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan1402-8-2-6"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:0.89999998;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;letter-spacing:0px;word-spacing:0px;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332"
+           y="117.69246"
+           x="-39.829967"
+           sodipodi:role="line">Neckline</tspan></text>
+      <g
+         transform="translate(0.37417734,8.6996231)"
+         id="g1884">
+        <path
+           style="fill:none;stroke:#ffffff;stroke-width:0.21791111;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -50.438967,93.668803 4.870095,-2.670698 c 0,0 1.820026,1.531724 4.948646,1.531724 3.633053,0 5.262844,-1.413898 5.262844,-1.413898 l 5.262845,2.395772"
+           id="path1832"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccscc" />
+        <path
+           style="fill:none;stroke:#ffffff;stroke-width:0.21791111;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -45.784884,91.174843 c 0,0 0.05182,5.005132 5.321757,4.889732 5.38067,-0.117825 5.53777,-4.732632 5.53777,-4.732632 l 0.589124,0.255287 c 0,0 -0.03928,1.01133 -0.353474,1.649548 -0.342139,0.694969 -1.46695,3.515109 -5.891244,3.515109 -3.826215,0 -5.270979,-2.615323 -5.518133,-3.731121 -0.121684,-0.54936 -0.240439,-1.575793 -0.240439,-1.575793 z"
+           id="path1834"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="csccssscc" />
+        <path
+           style="fill:none;stroke:#ffffff;stroke-width:0.21791111;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -45.763262,91.549116 c 0,0 1.672928,1.638524 5.026657,1.638524 3.943786,0 5.762605,-1.624638 5.762605,-1.624638"
+           id="path1836"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="csc" />
+        <path
+           style="fill:#ffffff;fill-opacity:0.58823529;stroke:#ffffff;stroke-width:0.21791111;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m -34.703968,93.240228 c -0.342139,0.694972 -1.46695,3.515112 -5.891244,3.515112 -3.826215,0 -5.270979,-2.61533 -5.518133,-3.731122 -0.121684,-0.54936 -0.227204,-1.580132 -0.227204,-1.580132 l -4.057152,2.170914 0.006,5.59676 h 20.318005 l 0.02377,-5.733775 -4.315069,-1.903855 c 0,0 -0.02478,1.027878 -0.338973,1.666098 z"
+           id="path1834-5"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssccccccs" />
+      </g>
+    </g>
+  </g>
+</svg>
