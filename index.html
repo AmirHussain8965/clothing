@@ -32,41 +32,42 @@
                         id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 navul_one">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Thuis</a>
+                                <a class="nav-link active" aria-current="page" href="index.html" ><span class="home_text">Thuis</span></a>
                             </li>
                             <li class="nav-item dropdown dropdown_one">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Collecties </a>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="collection_txt">Collecties</span> </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="dress.html">Dress</a>
+                                        <a class="dropdown-item" href="dress.html"><span class="dress_text">Jurk</span></a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="skirt.html">Rokken</a>
+                                        <a class="dropdown-item" href="skirt.html"><span class="skirts_text">Rokken</span></a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="shirts.html">Overhemden en tops</a>
+                                        <a class="dropdown-item" href="shirts.html"><span class="shirts_tops">Overhemden en tops</span></a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="t-shirts.html">T-shirts</a>
+                                        <a class="dropdown-item" href="t-shirts.html"><span class="Tshirts_text">T-shirts</span></a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.html">Over ons</a>
+                                <a class="nav-link" href="about.html"><span class="aboutus_txt">Over ons</span></a>                                
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
                         <div class="navbar_right_main">
-                            <div class="dropdown dropdown_two">
-                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                   <img src="assets/img/netherlands.png" alt="">
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <li><a class="dropdown-item" href="#"><img src="assets/img/flag1.svg" alt=""></a></li>
-                                    <li><a class="dropdown-item" href="#"><img src="assets/img/netherlands.png" alt=""></a></li>
-                                </ul>
+                            <div class="nav_select_main">
+                                <select id="language-select" class="form-select navbar_select">
+                                    <option value="du" data-image="assets/img/netherlands.png">Dutch</option>
+                                    <option value="en" data-image="assets/img/flag1.svg">English</option>
+                                </select>
+                                <!-- <div id="selected">
+                                    <img id="selected-image" src="assets/img/netherlands.png" alt="">
+                                    <span id="selected-text"></span>
+                                </div> -->
                             </div>
                             <div class="navbar_right_icon">
                                <a href="product_detail.html">
@@ -86,14 +87,14 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="hero_text_main_div">
-                        <h1>Stap in vertrouwen met op maat gemaakt maatwerk</h1>
-                        <p>Zitten er veel kledingstukken in jouw kast die dat niet doen
+                        <h1 id="home_tiltle">Stap in vertrouwen met op maat gemaakt maatwerk</h1>
+                        <p id="home_hero_des">Zitten er veel kledingstukken in jouw kast die dat niet doen
                             past bij jou? Denk hier eens over na: de mode-industrie is er één van
                             van de grootste bijdragers aan het mondiale broeikasgas
                             -uitstoot, goed voor ongeveer 10%. Kiezen
                             voor op maat gemaakte kleding kan ongebruikte kleding helpen minimaliseren
                             kleding, die een milieuvriendelijkere levensstijl bevordert.</p>
-                        <a href="index.html#collection"><button type="button">Ontdekken <img src="assets/img/arrow.svg" alt=""></button></a>
+                        <a href="index.html#collection"><button type="button"> <span class="explore_btn">Ontdekken</span> <img src="assets/img/arrow.svg" alt=""></button></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
@@ -112,7 +113,7 @@
         <div class="container">
             <div class="home_sec1_swiper_main">
                 <div class="home_sec1_swiper_text">
-                    <h1 class="title">Bestsellers</h1>
+                    <h1 class="title" id="best_sellers_title">Bestsellers</h1>
                 </div>
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
@@ -122,7 +123,7 @@
                                 <img src="assets/img/woman.svg" class="womanimage" alt="">
                                 <div class="hs1_overlay"></div>
                                 <div class="home_sec1_card_text">
-                                    <p>Rok</p>
+                                    <p class="skirt_text">Rok</p>
                                 </div>
                             </div>
                         </a>
@@ -133,7 +134,7 @@
                                 <img src="assets/img/woman.svg" class="womanimage" alt="">
                                 <div class="hs1_overlay"></div>
                                 <div class="home_sec1_card_text">
-                                    <p>Rok</p>
+                                    <p class="skirt_text">Rok</p>
                                 </div>
                             </div>
                         </a>
@@ -144,7 +145,7 @@
                                 <img src="assets/img/woman.svg" class="womanimage" alt="">
                                 <div class="hs1_overlay"></div>
                                 <div class="home_sec1_card_text">
-                                    <p>Rok</p>
+                                    <p class="skirt_text">Rok</p>
                                 </div>
                             </div>
                         </a>
@@ -155,7 +156,7 @@
                                 <img src="assets/img/woman.svg" class="womanimage" alt="">
                                 <div class="hs1_overlay"></div>
                                 <div class="home_sec1_card_text">
-                                    <p>Rok</p>
+                                    <p class="skirt_text">Rok</p>
                                 </div>
                             </div>
                         </a>
@@ -166,7 +167,7 @@
                                 <img src="assets/img/woman.svg" class="womanimage" alt="">
                                 <div class="hs1_overlay"></div>
                                 <div class="home_sec1_card_text">
-                                    <p>Rok</p>
+                                    <p class="skirt_text">Rok</p>
                                 </div>
                             </div>
                         </a>
@@ -184,19 +185,19 @@
 
     <section class="collection_section" id="collection">
         <div class="container">
-            <h1 class="title">Collecties</h1>
+            <h1 class="title collection_txt">Collecties</h1>
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="collection_small_imgs">
                         <img src="assets/img/Dress_changed_background.png" class="collec_img" alt="">
                         <div class="collec_btn">
-                            <a href="dress.html"><button type="button">Jurk <img src="assets/img/right.svg" class="arrow_img" alt="..."></button></a>
+                            <a href="dress.html"><button type="button"><span class="dress_text">Jurk</span> <img src="assets/img/right.svg" class="arrow_img" alt="..."></button></a>
                         </div>
                     </div>
                     <div class="collection_big_imgs">
                         <img src="assets/img/Top_changed_background.png" class="collec_img" alt="">
                         <div class="collec_btn">
-                           <a href="shirts.html"> <button type="button">Overhemden en tops <img src="assets/img/right.svg" class="arrow_img" alt="..."></button></a>
+                           <a href="shirts.html"> <button type="button"><span class="shirts_tops">Overhemden en tops</span> <img src="assets/img/right.svg" class="arrow_img" alt="..."></button></a>
                         </div>
                     </div>
                 </div>
@@ -204,13 +205,13 @@
                     <div class="collection_big_imgs">
                         <img src="assets/img/Skirt_changed_background.png" class="collec_img" alt="">
                         <div class="collec_btn">
-                            <a href="skirt.html"><button type="button">Rokken <img src="assets/img/right.svg" class="arrow_img" alt="..."></button></a>
+                            <a href="skirt.html"><button type="button"><span class="skirts_text">Rokken</span> <img src="assets/img/right.svg" class="arrow_img" alt="..."></button></a>
                         </div>
                     </div>
                     <div class="collection_small_imgs">
                         <img src="assets/img/Tshirt_changed_background.png" class="collec_img" alt="">
                         <div class="collec_btn">
-                            <a href="t-shirts.html"><button type="button">T-shirts <img src="assets/img/right.svg" class="arrow_img" alt="..."></button></a>
+                            <a href="t-shirts.html"><button type="button"> <span class="Tshirts_text">T-shirts </span><img src="assets/img/right.svg" class="arrow_img" alt="..."></button></a>
                         </div>
                     </div>
                 </div>
@@ -233,7 +234,7 @@
                             <a href="#"><img src="assets/img/s4.svg" alt="..."></a>
                         </div>
                         <div class="footer_text">
-                            <p>2024 Foxy-kleding. Alle rechten voorbehouden</p>
+                            <p class="footer1">2024 Foxy-kleding. Alle rechten voorbehouden</p>
                         </div>
                     </div>
                 </div>
@@ -265,6 +266,9 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/1.0.7/src/jquery.i18n.js"></script>
+    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/1.0.7/src/jquery.i18n.messagestore.js"></script>
+    <script src="assets/js/script.js"></script>
 
     <script>
         var swiper = new Swiper(".mySwiper", {

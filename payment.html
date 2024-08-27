@@ -34,41 +34,42 @@
                         id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 navul_one">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Thuis</a>
+                                <a class="nav-link active" aria-current="page" href="index.html" ><span class="home_text">Thuis</span></a>
                             </li>
                             <li class="nav-item dropdown dropdown_one">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Collecties </a>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="collection_txt">Collecties</span> </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="dress.html">Dress</a>
+                                        <a class="dropdown-item" href="dress.html"><span class="dress_text">Jurk</span></a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="skirt.html">Rokken</a>
+                                        <a class="dropdown-item" href="skirt.html"><span class="skirts_text">Rokken</span></a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="shirts.html">Overhemden en tops</a>
+                                        <a class="dropdown-item" href="shirts.html"><span class="shirts_tops">Overhemden en tops</span></a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="t-shirts.html">T-shirts</a>
+                                        <a class="dropdown-item" href="t-shirts.html"><span class="Tshirts_text">T-shirts</span></a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.html">Over ons</a>
+                                <a class="nav-link" href="about.html"><span class="aboutus_txt">Over ons</span></a>                                
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
                         <div class="navbar_right_main">
-                            <div class="dropdown dropdown_two">
-                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                   <img src="assets/img/netherlands.png" alt="">
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <li><a class="dropdown-item" href="#"><img src="assets/img/flag1.svg" alt=""></a></li>
-                                    <li><a class="dropdown-item" href="#"><img src="assets/img/netherlands.png" alt=""></a></li>
-                                </ul>
+                            <div class="nav_select_main">
+                                <select id="language-select" class="form-select navbar_select">
+                                    <option value="du" data-image="assets/img/netherlands.png">Dutch</option>
+                                    <option value="en" data-image="assets/img/flag1.svg">English</option>
+                                </select>
+                                <!-- <div id="selected">
+                                    <img id="selected-image" src="assets/img/netherlands.png" alt="">
+                                    <span id="selected-text"></span>
+                                </div> -->
                             </div>
                             <div class="navbar_right_icon">
                                <a href="product_detail.html">
@@ -86,47 +87,48 @@
     <section class="payment_section">
         <div class="container">
             <div class="contact_title">
-                <h1>Winkelwagen</h1>
-                <p><a href="index.html">Thuis</a> <i class="bi bi-chevron-right"></i> Winkel</p>
+                <h1 class="cart_txt">Winkelwagen</h1>
+                <p><a href="index.html"><span class="home_text">Thuis</span></a> <i class="bi bi-chevron-right"></i> <span class="shop_txt">Winkel</span></p>
             </div>
             <div class="row">
                 <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                     <div class="payment_left_card_body_div">
-                        <h2 class="left_ctitle">Contactgegevens</h2>
+                        <h2 class="left_ctitle"><span class="cont_detail">Contactgegevens</span></h2>
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="payment_left_input">
-                                    <input type="text" placeholder="Voornaam">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="payment_left_input">
-                                    <input type="text" placeholder="Achternaam">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="payment_left_input">
-                                    <input type="email" placeholder="E-mail">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="payment_left_input">
-                                    <input type="number" placeholder="Telefoonnummer">
-                                </div>
-                            </div>
                             <div class="col-lg-12 col-md-12 col-sm-12">
                                 <div class="payment_left_input">
-                                    <input type="text" placeholder="Adres">
+                                    <input type="text" id="address_place" placeholder="Adres">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="payment_left_input">
-                                    <input type="number" placeholder="Postcode">
+                                    <input type="email" id="cart_email" placeholder="E-mail">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="payment_left_input">
-                                    <input type="text" placeholder="Stad">
+                                    <input type="number" id="phoneNO" placeholder="Telefoonnummer">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="payment_left_input">
+                                    <input type="text" id="first_name" placeholder="Voornaam">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="payment_left_input">
+                                    <input type="text" id="last_name" placeholder="Achternaam">
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="payment_left_input">
+                                    <input id="postcode" type="number" placeholder="Postcode">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="payment_left_input">
+                                    <input type="text" id="city_place" placeholder="Stad">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12"></div>
@@ -135,7 +137,7 @@
                         <div class="payment_radio_btns_main">
                             <div class="radio_btns">
                                 <input type="radio" id="card" name="cart_radio">
-                                <label for="card">Kaart</label>
+                                <label for="card" class="card_txt">Kaart</label>
                             </div>
                             <div class="radio_btns">
                                 <input type="radio" id="Paypal" name="cart_radio">
@@ -143,18 +145,18 @@
                             </div>
                             <div class="radio_btns">
                                 <input type="radio" id="Shop" name="cart_radio">
-                                <label for="Shop">Winkel betalen</label>
+                                <label for="Shop" class="shoppay">Winkel betalen</label>
                             </div>
                         </div>
                         <div class="payment_left_input">
-                            <input type="number" placeholder="Kaartnummer">
+                            <input type="number" id="cardnumber" placeholder="Kaartnummer">
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-7 col-md-7 col-sm-12 mx-auto">
                     <div class="cart_payment_right_card_body_div">
                         <div class="cart_pay_title">
-                            <h3>Besteloverzicht</h3>
+                            <h3 class="order_summ">Besteloverzicht</h3>
                         </div>
                         <div class="cart_pay_product">
                             <div class="cart_product_inner">
@@ -162,30 +164,30 @@
                                     <img src="assets/img/Product.svg" alt="">
                                 </div>
                                 <div class="cart_product_inner_text">
-                                    <h5>Ruwe zwarte T-shirtopstelling</h5>
-                                    <p>Kleur: <span class="color_span"></span> <span class="line_span"></span> Maat: M</p>
+                                    <h5 class="pay_shirt_txt1">Ruwe zwarte T-shirtopstelling</h5>
+                                    <p><span class="pay_shirt_txt2">Kleur:</span><span class="color_span"></span> <span class="line_span"></span><span class="pay_shirt_txt3">Maat:</span>M</p>
                                 </div>
                             </div>
                             <p class="pro_price">$75.00</p>
                         </div>
                         <div class="cart_pay_product_description">
-                            <p>Subtotaal</p>
+                            <p class="subtotal_txt">Subtotaal</p>
                             <h5>$ 90.00</h5>
                         </div>
                         <div class="cart_pay_product_description">
-                            <p>Verzending: </p>
-                            <h5>Vrij</h5>
+                            <p class="shipping_txt">Verzending: </p>
+                            <h5 class="free_txt">Vrij</h5>
                         </div>
                         <div class="cart_pay_product_description">
-                            <p>Belasting: </p>
+                            <p class="tax_txt">Belasting: </p>
                             <h5>$ 3.00</h5>
                         </div>
                         <div class="border_div"></div>
                         <div class="cart_pay_product_description">
-                            <h5>Totaal</h5>
+                            <h5 class="total_txt">Totaal</h5>
                             <h5>$ 100.00</h5>
                         </div>
-                        <button type="button" class="cart_pay_product_descrip_btn">Afrekenen <img src="assets/img/arrow.svg" alt=""></button>
+                        <button type="button" class="cart_pay_product_descrip_btn"><span class="checkout_btn">Afrekenen</span> <img src="assets/img/arrow.svg" alt=""></button>
                         <a href="index.html#collection" class="cart_pay_product_a">Ga door met winkelen</a>
                     </div>
                 </div>
@@ -239,7 +241,11 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/1.0.7/src/jquery.i18n.js"></script>
+    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/1.0.7/src/jquery.i18n.messagestore.js"></script>
     <script src="assets/js/script.js"></script>
+
+
 </body>
 
 </html>

@@ -99,6 +99,7 @@ body{
     gap: 40px;
     align-items: center;
 }
+
 .navbar_right_icon{
     position: relative;
     cursor: pointer;
@@ -117,6 +118,17 @@ body{
     align-items: center;
     justify-content: center;
     /* font-family: "Playfair Display", serif; */
+}
+.navbar_select{
+    width: 100px;
+    border: none;
+    background-color: #F0EADC;
+    border: 2px solid #714C36 !important;
+    border-radius: 8px;
+    padding: 6px 10px;
+    box-shadow: none !important;
+    outline: none;
+    background-position: right 0.45rem center;
 }
 .navbar_right_main img{
     height: 35px;
@@ -394,11 +406,12 @@ body{
     bottom: 0px;
     right: 0;
     padding: 20px 20px;
-    max-width: 240px;
+    max-width: max-content;
+    min-width: 240px;
 }
 .collec_btn button{
     background: #fff;
-    padding: 10px 20px;
+    padding: 10px 15px;
     color: #714C36;
     border-radius: 6px;
     border: none;
@@ -408,6 +421,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.collec_btn button span{
+    padding-right: 8px;
 }
 .collec_btn a{
     text-decoration: none;
@@ -421,7 +437,7 @@ body{
 }
 .collec_btn button:hover{
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 15px;
     background: #714C36;
 }
 .collec_btn button:hover .arrow_img{
@@ -641,7 +657,7 @@ input[type='number'] {
     margin-right: 10px;
 }
 .radio_btns input[type="radio"]:checked {
-    background-color: #714C36;
+    background-color: #fff;
     border-color: #714C36;
 }
 .radio_btns input[type="radio"]:checked::before {
@@ -649,7 +665,7 @@ input[type='number'] {
     display: block;
     width: 10px;
     height: 10px;
-    background-color: #fff;
+    background-color: #714C36;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -854,7 +870,7 @@ input[type='number'] {
     margin-bottom: 0;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     font-size: 14px;
     font-weight: 400;
     line-height: 25.68px;
@@ -1022,7 +1038,8 @@ input[type='number'] {
     right: 100px;
     bottom: 30px;
     width: 100%;
-    max-width: 180px;
+    max-width: max-content;
+    min-width: 140px;
     text-align: start;
 }
 .design_right_btn_main h5{
@@ -1043,10 +1060,8 @@ input[type='number'] {
     font-size: 16px;
 }
 .design_right_btn_main img{
-    position: absolute;
-    right: 20px;
     height: 13px;
-    top: 36%;
+    padding-left: 10px;
 }
 .design_right_img_div{
     width: 100%;

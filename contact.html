@@ -34,41 +34,42 @@
                         id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 navul_one">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Thuis</a>
+                                <a class="nav-link active" aria-current="page" href="index.html" ><span class="home_text">Thuis</span></a>
                             </li>
                             <li class="nav-item dropdown dropdown_one">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Collecties </a>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="collection_txt">Collecties</span> </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="dress.html">Dress</a>
+                                        <a class="dropdown-item" href="dress.html"><span class="dress_text">Jurk</span></a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="skirt.html">Rokken</a>
+                                        <a class="dropdown-item" href="skirt.html"><span class="skirts_text">Rokken</span></a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="shirts.html">Overhemden en tops</a>
+                                        <a class="dropdown-item" href="shirts.html"><span class="shirts_tops">Overhemden en tops</span></a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="t-shirts.html">T-shirts</a>
+                                        <a class="dropdown-item" href="t-shirts.html"><span class="Tshirts_text">T-shirts</span></a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.html">Over ons</a>
+                                <a class="nav-link" href="about.html"><span class="aboutus_txt">Over ons</span></a>                                
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
                         <div class="navbar_right_main">
-                            <div class="dropdown dropdown_two">
-                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                   <img src="assets/img/netherlands.png" alt="">
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <li><a class="dropdown-item" href="#"><img src="assets/img/flag1.svg" alt=""></a></li>
-                                    <li><a class="dropdown-item" href="#"><img src="assets/img/netherlands.png" alt=""></a></li>
-                                </ul>
+                            <div class="nav_select_main">
+                                <select id="language-select" class="form-select navbar_select">
+                                    <option value="du" data-image="assets/img/netherlands.png">Dutch</option>
+                                    <option value="en" data-image="assets/img/flag1.svg">English</option>
+                                </select>
+                                <!-- <div id="selected">
+                                    <img id="selected-image" src="assets/img/netherlands.png" alt="">
+                                    <span id="selected-text"></span>
+                                </div> -->
                             </div>
                             <div class="navbar_right_icon">
                                <a href="product_detail.html">
@@ -86,31 +87,31 @@
     <section class="contact_section">
         <div class="container">
             <div class="contact_title">
-                <h1>Neem contact met ons op</h1>
-                <p><a href="index.html">Thuis</a> <i class="bi bi-chevron-right"></i>Neem contact met ons op</p>
+                <h1 class="contactus_txt">Neem contact met ons op</h1>
+                <p><a href="index.html"> <span class="home_text">Thuis</span></a> <i class="bi bi-chevron-right"></i><span class="contactus_txt">Neem contact met ons op</span></p>
             </div>
             <div class="contact_card_body_div">
                 <div class="contact_input">
-                    <input type="text" id="name" placeholder="Naam *">
+                    <input type="text" id="cont_name" placeholder="Naam *">
                 </div>
                 <div class="contact_input">
-                    <input type="email" id="email" placeholder="E-mail *">
+                    <input type="email" id="cont_email" placeholder="E-mail *">
                 </div>
                 <div class="contact_input">
-                    <input type="number" id="phone" placeholder="Telefoonnummer">
+                    <input type="number" id="cont_phone" placeholder="Telefoonnummer">
                 </div>
                 <div class="contact_input">
-                    <select id="subject" class="form-select">
-                        <option value="" selected disabled>Onderwerp</option>
+                    <select id="cont_subject" class="form-select">
+                        <option value="subject" selected>Onderwerp</option>
                         <option value="ABC">ABC</option>
                         <option value="DEF">DEF</option>
                     </select>
                 </div>
                 <div class="contact_input">
-                    <textarea id="message" rows="6" placeholder="Bericht"></textarea>
+                    <textarea id="cont_message" rows="6" placeholder="Bericht"></textarea>
                 </div>
                 <div class="contact_button">
-                    <button type="button" id="submitBtn">Indienen <img src="assets/img/arrow.svg" alt="..."></button>
+                    <button type="button" id="submitBtn"><span class="submitBtn_txt">Indienen</span> <img src="assets/img/arrow.svg" alt="..."></button>
                 </div>
             </div>
         </div>
@@ -167,11 +168,11 @@
 
     <script>
         document.getElementById('submitBtn').addEventListener('click', function () {
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
+            const name = document.getElementById('cont_name').value;
+            const email = document.getElementById('cont_email').value;
+            const phone = document.getElementById('cont_phone').value;
+            const subject = document.getElementById('cont_subject').value;
+            const message = document.getElementById('cont_message').value;
 
             if (name && email && phone && subject && message) {
                 Swal.fire({

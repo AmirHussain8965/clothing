@@ -33,41 +33,42 @@
                         id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 navul_one">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Thuis</a>
+                                <a class="nav-link active" aria-current="page" href="index.html" ><span class="home_text">Thuis</span></a>
                             </li>
                             <li class="nav-item dropdown dropdown_one">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Collecties </a>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="collection_txt">Collecties</span> </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="dress.html">Dress</a>
+                                        <a class="dropdown-item" href="dress.html"><span class="dress_text">Jurk</span></a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="skirt.html">Rokken</a>
+                                        <a class="dropdown-item" href="skirt.html"><span class="skirts_text">Rokken</span></a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="shirts.html">Overhemden en tops</a>
+                                        <a class="dropdown-item" href="shirts.html"><span class="shirts_tops">Overhemden en tops</span></a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="t-shirts.html">T-shirts</a>
+                                        <a class="dropdown-item" href="t-shirts.html"><span class="Tshirts_text">T-shirts</span></a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.html">Over ons</a>
+                                <a class="nav-link" href="about.html"><span class="aboutus_txt">Over ons</span></a>                                
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
                         <div class="navbar_right_main">
-                            <div class="dropdown dropdown_two">
-                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                   <img src="assets/img/netherlands.png" alt="">
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <li><a class="dropdown-item" href="#"><img src="assets/img/flag1.svg" alt=""></a></li>
-                                    <li><a class="dropdown-item" href="#"><img src="assets/img/netherlands.png" alt=""></a></li>
-                                </ul>
+                            <div class="nav_select_main">
+                                <select id="language-select" class="form-select navbar_select">
+                                    <option value="du" data-image="assets/img/netherlands.png">Dutch</option>
+                                    <option value="en" data-image="assets/img/flag1.svg">English</option>
+                                </select>
+                                <!-- <div id="selected">
+                                    <img id="selected-image" src="assets/img/netherlands.png" alt="">
+                                    <span id="selected-text"></span>
+                                </div> -->
                             </div>
                             <div class="navbar_right_icon">
                                <a href="product_detail.html">
@@ -85,12 +86,12 @@
     <section class="about_section">
         <div class="container">
             <div class="seller_title mb-0">
-                <h1 class="mb-0">Over ons</h1>
+                <h1 class="mb-0 aboutus_txt">Over ons</h1>
             </div>
             <div class="about_text_main_div">
-                <p>De manier waarop we kleding maken en kopen schaadt onze planeet. De mode-industrie is een van de meest vervuilende ter wereld en verantwoordelijk voor naar schatting 10% van onze mondiale uitstoot van broeikasgassen. Naarmate de klimaatverandering toeneemt, wordt het van cruciaal belang om opnieuw na te denken over de manier waarop we kleding produceren. </p>
-                <p>Bij Foxy Wear is het ons doel om de voetafdruk van onze kledingafval te verkleinen door elk kledingstuk op maat te passen voor onze klanten. We bereiken dit door de technologie-industrie te laten samensmelten met mode.</p>
-                <p>Al onze stukken worden geproduceerd in Spanje. Wij produceren uitsluitend op bestelling en houden geen voorraad aan om verspilling te minimaliseren en overproductie te voorkomen. Elk kledingstuk wordt met nauwgezette zorg en aandacht voor detail vervaardigd, zodat het perfect past, zijn doel dient en een blijvende indruk achterlaat op onze klanten.</p>
+                <p class="about_des1">De manier waarop we kleding maken en kopen schaadt onze planeet. De mode-industrie is een van de meest vervuilende ter wereld en verantwoordelijk voor naar schatting 10% van onze mondiale uitstoot van broeikasgassen. Naarmate de klimaatverandering toeneemt, wordt het van cruciaal belang om opnieuw na te denken over de manier waarop we kleding produceren. </p>
+                <p class="about_des2">Bij Foxy Wear is het ons doel om de voetafdruk van onze kledingafval te verkleinen door elk kledingstuk op maat te passen voor onze klanten. We bereiken dit door de technologie-industrie te laten samensmelten met mode.</p>
+                <p class="about_des3">Al onze stukken worden geproduceerd in Spanje. Wij produceren uitsluitend op bestelling en houden geen voorraad aan om verspilling te minimaliseren en overproductie te voorkomen. Elk kledingstuk wordt met nauwgezette zorg en aandacht voor detail vervaardigd, zodat het perfect past, zijn doel dient en een blijvende indruk achterlaat op onze klanten.</p>
                 <img src="assets/img/about.svg" alt="">
             </div>
         </div>
@@ -142,7 +143,10 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/1.0.7/src/jquery.i18n.js"></script>
+    <script src="https://cdn.rawgit.com/wikimedia/jquery.i18n/1.0.7/src/jquery.i18n.messagestore.js"></script>
     <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
