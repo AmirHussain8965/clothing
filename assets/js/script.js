@@ -68,7 +68,8 @@ window.onload = setActiveLink;
             "home_hero_des": "Zijn er veel kledingstukken in je kast die je niet passen? Overweeg dit: de mode-industrie is een van de grootste bijdragers aan de wereldwijde uitstoot van broeikasgassen, goed voor ongeveer 10%. Kiezen voor kleding op maat kan helpen om ongebruikte kleding te verminderen, wat bijdraagt aan een milieuvriendelijkere levensstijl.",
 
             "explore_btn": "Ontdek",
-            "scroll_down": "SCROLL NAAR BENEDEN",
+            "scroll_down1": "SCROLL NAAR BENEDEN",
+            "scroll_down2": "",
             "best_sellers_title": "Bestsellers",
             "skirt_text": "Rok",
             "collection_txt": "Collecties",
@@ -125,13 +126,21 @@ window.onload = setActiveLink;
             "checkout_btn": "Afrekenen",
             "cart_pay_product_a": "Ga door met winkelen",
             "pd_title": "Uw winkelwagen",
+            // "subject_select": "Onderwerp",
+           "subject_select": {
+                "subject": "Onderwerp",    // Matches the value of the first <option>
+                "C": "A",          // Matches the value of the second <option>
+                "C": "B",       // Matches the value of the third <option>
+                "C": "C",    // Matches the value of the third <option>
+            }
         },
 
         "en": { "home_tiltle": "Step out with confidence with custom tailoring", 
 
             "home_hero_des": "Are there many garments in your closet that do not fit you? Consider this: the fashion industry is one of the largest contributors to global greenhouse gas emissions, accounting for approximately 10%. Opting for custom-fit clothing can help minimize unused apparel, fostering a more environmentally friendly lifestyle.",
             "explore_btn": "Explore",
-            "scroll_down": "SCROLL DOWN",
+            "scroll_down1": "",
+            "scroll_down2": "SCROLL DOWN",
             "best_sellers_title": "Best Sellers",
             "skirt_text": "Skirt",
             "collection_txt": "Collections",
@@ -188,6 +197,13 @@ window.onload = setActiveLink;
             "top_text": "Tops",
             "cart_pay_product_a": "Continue Shopping",
             "pd_title": "Your cart",
+            // "subject_select": "Subject",
+            "subject_select": {
+                "subject": "Subject",    // Matches the value of the first <option>
+                "C": "A",          // Matches the value of the second <option>
+                "C": "B",       // Matches the value of the third <option>
+                "C": "C",    // Matches the value of the third <option>
+            }
         },
     };
 
@@ -198,6 +214,24 @@ window.onload = setActiveLink;
         var lang = $(this).val();
         var inputValue = $(this).attr('');
 
+       // Function to translate select options
+    function translateOptions(lang) {
+        $('#cont_subject option').each(function() {
+            let optionValue = $(this).val(); // Get the value of the current option
+            
+            // Get the translated text based on the option value
+            let translatedText = translations[lang]['subject_select'][optionValue];
+
+            // Update the option text if a translation exists
+            if (translatedText) {
+                $(this).text(translatedText);
+            }
+        });
+    }
+    
+    translateOptions(lang);
+
+    
         // For Placeholder ===========
         $('#first_name').attr('placeholder', translations[lang]['first_name']);
         $('#last_name').attr('placeholder', translations[lang]['last_name']);
@@ -216,7 +250,8 @@ window.onload = setActiveLink;
         $('#home_tiltle').text(translations[lang]['home_tiltle']);
         $('#home_hero_des').text(translations[lang]['home_hero_des']);
         $('.explore_btn').text(translations[lang]['explore_btn']);
-        $('.scroll_down').text(translations[lang]['scroll_down']);
+        $('.scroll_down1').text(translations[lang]['scroll_down1']);
+        $('.scroll_down2').text(translations[lang]['scroll_down2']);
         $('#best_sellers_title').text(translations[lang]['best_sellers_title']);        
         $('.skirt_text').text(translations[lang]['skirt_text']);
         $('.collection_txt').text(translations[lang]['collection_txt']);

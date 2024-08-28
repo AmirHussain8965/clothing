@@ -18,16 +18,25 @@
 } */
 /* font-family: "Playfair Display", serif; */
 /* font-family: "Source Code Pro", monospace; */
-.scroll_down{
+.scroll_down {
     font-family: "Source Code Pro", monospace;
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #714C36;
+}
+.scroll_down1{
     position: absolute;
     top: 50%;
-    right: 0%;
+    right: -63px;
+    margin-bottom: 0;
+    transform: rotate(90deg) translate(-50%, -50%);
+}
+.scroll_down2{
+    position: absolute;
+    top: 50%;
+    right: -20px;
     margin-bottom: 0;
     transform: rotate(90deg) translate(-50%, -50%);
 }
@@ -1321,6 +1330,9 @@ input[type='number'] {
     }
 }
 @media (max-width: 576px) {
+    .Hero_section {
+        padding-top: 30px;
+    }
     .hero_page_border_img {
         background-image: url(../../assets/img/Front_page_dress.png);
         height: auto;
@@ -1472,11 +1484,14 @@ input[type='number'] {
         top: 40px;
         right: 40px;
     }
-    .scroll_down{
-        right: -24px;
+    .scroll_down1{
+        right: -70px;
+    }
+    .scroll_down2{
+        right: -20px;
     }
     .hero_text_main_div{
-        padding-right: 20px;
+        padding-right: 25px;
     }
     .hero_text_main_div{
         padding-top: 0;
@@ -1588,6 +1603,12 @@ input[type='number'] {
         min-width: 70px;
         max-width: 70px;
         padding: 15px 8px;
+    }
+    .hero_text_main_div h1 {
+        margin-top: 40px;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 50px;
     }
 }
 @media (max-width: 330px){
