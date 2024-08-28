@@ -298,13 +298,3 @@ window.onload = setActiveLink;
     });
 
     
-    const selectElement = document.getElementById('language-select');
-    const selectedImage = document.getElementById('selected-image');
-    const selectedText = document.getElementById('selected-text');
-
-    selectElement.addEventListener('change', function() {
-        const selectedOption = this.options[this.selectedIndex];
-        const imageUrl = selectedOption.getAttribute('data-image');
-        selectedImage.src = imageUrl;
-        selectedText.textContent = selectedOption.textContent;
-    });
