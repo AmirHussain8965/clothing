@@ -124,6 +124,7 @@ window.onload = setActiveLink;
             "total_txt": "Totaal",
             "checkout_btn": "Afrekenen",
             "cart_pay_product_a": "Ga door met winkelen",
+            "pd_title": "Uw winkelwagen",
         },
 
         "en": { "home_tiltle": "Step out with confidence with custom tailoring", 
@@ -185,10 +186,15 @@ window.onload = setActiveLink;
             "checkout_btn": "Checkout",
             "shirts_text": "Shirts",
             "top_text": "Tops",
+            "cart_pay_product_a": "Continue Shopping",
+            "pd_title": "Your cart",
         },
     };
 
+
     $('#language-select').change(function() {
+        
+
         var lang = $(this).val();
         var inputValue = $(this).attr('');
 
@@ -253,9 +259,10 @@ window.onload = setActiveLink;
         $('.cart_pay_product_a').text(translations[lang]['cart_pay_product_a']);
         $('.top_text').text(translations[lang]['top_text']);
         $('.shirts_text').text(translations[lang]['shirts_text']);
+        $('.pd_title').text(translations[lang]['pd_title']);
     });
 
-
+    
     const selectElement = document.getElementById('language-select');
     const selectedImage = document.getElementById('selected-image');
     const selectedText = document.getElementById('selected-text');
