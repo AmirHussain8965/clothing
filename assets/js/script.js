@@ -207,15 +207,7 @@ window.onload = setActiveLink;
         },
     };
 
-
-    $('#language-select').change(function() {
-        
-
-        var lang = $(this).val();
-        var inputValue = $(this).attr('');
-
-       // Function to translate select options
-    function translateOptions(lang) {
+    const translateOptions = (lang) => {
         $('#cont_subject option').each(function() {
             let optionValue = $(this).val(); // Get the value of the current option
             
@@ -228,10 +220,9 @@ window.onload = setActiveLink;
             }
         });
     }
-    
-    translateOptions(lang);
 
-    
+    const translatePage = (lang) => {
+        console.log('function called',lang)
         // For Placeholder ===========
         $('#first_name').attr('placeholder', translations[lang]['first_name']);
         $('#last_name').attr('placeholder', translations[lang]['last_name']);
@@ -295,6 +286,31 @@ window.onload = setActiveLink;
         $('.top_text').text(translations[lang]['top_text']);
         $('.shirts_text').text(translations[lang]['shirts_text']);
         $('.pd_title').text(translations[lang]['pd_title']);
+    }
+
+
+
+
+    const value = localStorage.getItem('lang');
+
+    // Check if there's a saved language in localStorage
+    if (value) {
+        // Set the dropdown to the saved language
+        $('#language-select').val(value);
+    
+        // Translate the options and page content based on the saved language
+        translateOptions(value);
+        translatePage(value);
+    }
+    
+    $('#language-select').change(function() {
+        // Save the selected language to localStorage
+        localStorage.setItem('lang', $(this).val());
+    
+        // Call translation functions based on the newly selected language
+        translateOptions($(this).val());
+        translatePage($(this).val());
     });
 
+ 
     
