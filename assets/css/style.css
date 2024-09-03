@@ -91,17 +91,22 @@ body{
     background: #F0EADC;
     border: 2px solid #714C36;
     border-radius: 8px;
-    padding: 3px;
+    padding: 5px 10px;
 }
 .dropdown_two a{
     background: #F0EADC;
     width: 85px;
-}
+    border-radius: 5px;
+} 
 .dropdown_two .dropdown-toggle::after{
     border: none;
     content: url(../../assets/img/chev.svg);
     position: relative;
     top: 4px;
+}
+.selected-item {
+    background-color: #c1c1c1 !important;
+    color: white !important;
 }
 .navbar_right_main{
     display: flex;

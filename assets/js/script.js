@@ -301,6 +301,15 @@ window.onload = setActiveLink;
         // Translate the options and page content based on the saved language
         translateOptions(value);
         translatePage(value);
+        if (value == 'du'){
+            console.log('w in ifn e',  )
+            $('.one').addClass('selected-item');
+            $('#selected-language').html(`<img src="assets/img/netherlands.png" alt=""></a>`);
+        }else{
+            console.log('else' )
+            $('.two').addClass('selected-item');
+            $('#selected-language').html(`<img src="assets/img/united-kingdom.png" alt=""></a>`);
+        }
     }
     
     $('#language-select').change(function() {
@@ -313,4 +322,27 @@ window.onload = setActiveLink;
     });
 
  
+    $(document).ready(function() {
+        $('#language-select .dropdown-item').click(function(e) {
+            e.preventDefault(); // Prevent default anchor behavior
+            
+            console.log($(this).attr('data-attr'),'here we go ')
+            localStorage.setItem('lang',$(this).attr('data-attr'));
+    
+            // Call translation functions based on the newly selected language
+            translateOptions($(this).attr('data-attr'));
+            translatePage($(this).attr('data-attr'));
+            // Remove 'selected-item' class from all items
+            $('#language-select .dropdown-item').removeClass('selected-item');
+    
+            // Add 'selected-item' class to the clicked item
+            $(this).addClass('selected-item');
+    
+            // Get the selected language text and image
+            var selectedText = $(this).html();
+    
+            // Update the button text with the selected language
+            $('#selected-language').html(selectedText);
+        });
+    });
     

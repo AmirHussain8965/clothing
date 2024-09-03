@@ -61,10 +61,17 @@
                         </ul>
                         <div class="navbar_right_main">
                             <div class="nav_select_main">
-                                <select id="language-select" class="form-select navbar_select">
-                                    <option value="du" data-image="assets/img/netherlands.png">Dutch</option>
-                                    <option value="en" data-image="assets/img/flag1.svg">English</option>
-                                </select>
+                                <div class="dropdown_two">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span id="selected-language"><img src="assets/img/netherlands.png" alt="..."></span>
+                                        </button>
+                                        <ul class="dropdown-menu" id="language-select">
+                                            <li value="du"><a class="dropdown-item one " data-attr="du" href="#" ><img src="assets/img/netherlands.png" alt=""></a></li>
+                                            <li value="en"><a class="dropdown-item two" href="#" data-attr="en"><img src="assets/img/united-kingdom.png" alt=""></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                                 <!-- <div id="selected">
                                     <img id="selected-image" src="assets/img/netherlands.png" alt="">
                                     <span id="selected-text"></span>
