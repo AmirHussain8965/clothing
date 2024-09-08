@@ -133,7 +133,11 @@ window.onload = setActiveLink;
                 "C": "A",          // Matches the value of the second <option>
                 "C": "B",       // Matches the value of the third <option>
                 "C": "C",    // Matches the value of the third <option>
-            }
+            },
+            "sweetalert_success_title": "Ingediend!",
+            "sweetalert_success_text": "Uw bericht is succesvol verzonden.",
+            "sweetalert_error_title": "Oeps...",
+            "sweetalert_error_text": "Vul alle verplichte velden in.",
         },
 
         "en": { "home_tiltle": "Step out with confidence with custom tailoring", 
@@ -204,7 +208,11 @@ window.onload = setActiveLink;
                 "C": "A",          // Matches the value of the second <option>
                 "C": "B",       // Matches the value of the third <option>
                 "C": "C",    // Matches the value of the third <option>
-            }
+            },
+            "sweetalert_success_title": "Submitted!",
+            "sweetalert_success_text": "Your message has been sent successfully.",
+            "sweetalert_error_title": "Oops...",
+            "sweetalert_error_text": "Please fill in all required fields.",
         },
     };
 

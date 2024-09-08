@@ -182,21 +182,25 @@
             const phone = document.getElementById('cont_phone').value;
             const subject = document.getElementById('cont_subject').value;
             const message = document.getElementById('cont_message').value;
-
+            
+            // Get the current language (du or en)
+            const lang = localStorage.getItem('lang') || 'en'; // default to 'en' if no lang is set
+        
             if (name && email && phone && subject && message) {
                 Swal.fire({
-                    icon: 'succes',
-                    title: 'Ingediend!',
-                    text: 'Uw bericht is succesvol verzonden.'
+                    icon: 'success',
+                    title: translations[lang]['sweetalert_success_title'], // Use translated title
+                    text: translations[lang]['sweetalert_success_text']    // Use translated text
                 });
             } else {
                 Swal.fire({
-                    icon: 'fout',
-                    title: 'Oeps...',
-                    text: 'Vul alle verplichte velden in.'
+                    icon: 'error',
+                    title: translations[lang]['sweetalert_error_title'],   // Use translated title
+                    text: translations[lang]['sweetalert_error_text']      // Use translated text
                 });
             }
         });
+        
     </script>
 
 </body>
