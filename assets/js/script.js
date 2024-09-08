@@ -63,7 +63,7 @@ window.onload = setActiveLink;
 
     var translations = {
         
-        "du": { "home_tiltle": "Step into confidence with custom-made tailoring",
+        "du": { "home_tiltle": "Stap in vertrouwen met op maat gemaakt maatwerk",
             
 
             "home_hero_des": "Zijn er veel kledingstukken in je kast die je niet passen? Overweeg dit: de mode-industrie is een van de grootste bijdragers aan de wereldwijde uitstoot van broeikasgassen, goed voor ongeveer 10%. Kiezen voor kleding op maat kan helpen om ongebruikte kleding te verminderen, wat bijdraagt aan een milieuvriendelijkere levensstijl.",
@@ -140,7 +140,7 @@ window.onload = setActiveLink;
             "sweetalert_error_text": "Vul alle verplichte velden in.",
         },
 
-        "en": { "home_tiltle": "Step out with confidence with custom tailoring", 
+        "en": { "home_tiltle": "Step into confidence with custom-made tailoring", 
 
             "home_hero_des": "Are there many garments in your closet that do not fit you? Consider this: the fashion industry is one of the largest contributors to global greenhouse gas emissions, accounting for approximately 10%. Opting for custom-fit clothing can help minimize unused apparel, fostering a more environmentally friendly lifestyle.",
             "explore_btn": "Explore",
