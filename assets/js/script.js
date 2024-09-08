@@ -63,7 +63,8 @@ window.onload = setActiveLink;
 
     var translations = {
         
-        "du": { "home_tiltle": "Stap in vertrouwen met op maat gemaakt maatwerk",
+        "du": { "home_tiltle": "Step into confidence with custom-made tailoring",
+            
 
             "home_hero_des": "Zijn er veel kledingstukken in je kast die je niet passen? Overweeg dit: de mode-industrie is een van de grootste bijdragers aan de wereldwijde uitstoot van broeikasgassen, goed voor ongeveer 10%. Kiezen voor kleding op maat kan helpen om ongebruikte kleding te verminderen, wat bijdraagt aan een milieuvriendelijkere levensstijl.",
 
